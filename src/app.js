@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const {Cat} = require('./models');
+const {Cat} = require('./models/cats');
 app.use(express.json());
 
 app.post('/cats', (req, res) => {
