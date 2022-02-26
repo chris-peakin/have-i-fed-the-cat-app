@@ -7,7 +7,7 @@ app.post('/cats', (req, res) => {
     Cat.create(req.body).then(cat => res.status(201).json(cat));
 });
 
-app.get('cats', (req, res) => {
+app.get('/cats', (req, res) => {
     Cat.findAll(req.body).then(cat => res.status(201).json(cat));
 });
 
